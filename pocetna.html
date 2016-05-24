@@ -1,0 +1,171 @@
+<html>
+
+<head>
+
+
+    <title>CITY OF SKOPJE</title>
+
+</head>
+
+<body>
+    <style>
+        article {
+            position: fixed;
+            width: 70%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding: 30px 15%;
+            background-color: lightcyan;
+            overflow: auto;
+            z-index: 0;
+            transform-origin: 0 50%;
+        }
+		h3{
+		margin: 20px;
+		}
+        
+        article:after {
+            position: absolute;
+            content: '  ';
+            left: 100%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        
+        nav {
+            position: fixed;
+            left: -21em;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(173, 175, 227, 0.6) ;
+            border-right: 30px solid rgba(173, 175, 227, 0.6);
+            
+            z-index: 1;
+            cursor: pointer;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+        }
+        
+        nav:after {
+            position: absolute;
+            content: '  ';
+            width: 0;
+            height: 0;
+            right: -65px;
+            top: 30%;
+            border-width: 12px 12px;
+            border-style: solid;
+            border-color: transparent transparent transparent #2554C7;
+        }
+        
+        nav ul {
+            width: 15em;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        
+        article,
+        article:after,
+        nav,
+        nav * {
+            transition: all 2000ms ease;
+        }
+        
+        nav:hover {
+            left: 0;
+        }
+        
+        nav:hover ~ article:after {
+            left: 60%
+        }
+        
+        nav li {
+            color: black;
+            padding: 3%;
+        }
+		
+		html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+	  
+	  #skopjetitle{
+  position: absolute;
+	top: 50px;
+left: 100px;
+font-size: 30px;
+background-color: rgba(173, 175, 227, 0.6);
+}
+    </style>
+	<div id="map"></div> 
+	<div id="skopjetitle">
+	<h3> City of Skopje </h3>
+	</div>
+    <nav>
+<a href="http://www.accuweather.com/en/mk/skopje/227397/weather-forecast/227397" class="aw-widget-legal">
+
+</a><div id="awcc1462905417935" class="aw-widget-current"  data-locationkey="227397" data-unit="c" data-language="en-us" data-useip="false" data-uid="  awcc1462905417935"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+        <ul>
+          	 <b><i> SELECT YOUR DESTINATION 
+          	 	
+          	 </i></b><br><br>
+            
+                     	 
+          	<form action="#" method="post">
+            <div id="selection">
+ 			<input type="checkbox" name="baraj" value="0" > Coffee shops<br>
+    		<input type="checkbox" name="baraj" value="1" > Restaurants<br>
+			<input type="checkbox" name="baraj" value="2" > Hotels<br>
+			<input type="checkbox" name="baraj" value="3" > Landscapes<br>
+			<input type="checkbox" name="baraj" value="4" > Shopping<br>
+			<input type="checkbox" name="baraj" value="5" > Museums<br>
+			<input type="checkbox" name="baraj" value="6" > City Squares<br>
+			<input type="checkbox" name="baraj" value="7" > Activities<br>
+			<input type="checkbox" name="baraj" value="8" > Historical Places<br>
+			
+			
+  			</div>
+          	 </i></b>
+          	 <br><br><br><br><br><br>
+          	 <b>About Us</b>
+          	 
+			 <p>
+			 <div style="font-size: 75%; font-family: arial"  >
+			 &copy; City of Skopje 2016, Skopje2Web <p>
+  
+</form>
+            
+
+        </ul>
+
+    </nav>
+
+    <script type="text/javascript" src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB0Vep_UO3IX3klwUYqH9xM18pOwwsnZ0&callback=initMap"
+    async defer></script>
+
+    <script>
+    // get reference to element containing toppings checkboxes
+var el = document.getElementById('selection');
+
+// get reference to input elements in toppings container element
+var tops = el.getElementsByTagName('input');
+
+// assign function to onclick property of each checkbox
+for (var i=0, len=tops.length; i<len; i++) {
+    if ( tops[i].type === 'checkbox' ) {
+        tops[i].onclick = update;
+    }
+}
+    </script>
+	
+
+</body>
+
+</html>
