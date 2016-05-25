@@ -88,15 +88,15 @@ var historical =
 var markers = [];
 
 var icons = [ 
-"http://dampos.github.io/skp/images/coffee.png", 
-"http://dampos.github.io/skp/images/restaurant.png",
-"http://dampos.github.io/skp/images/hotel.png",
-"http://dampos.github.io/skp/images/landscape.png",
-"http://dampos.github.io/skp/images/shopping.png",
-"http://dampos.github.io/skp/images/museum.png",
-"http://dampos.github.io/skp/images/square.png",
-"http://dampos.github.io/skp/images/hangout.png",
-"http://dampos.github.io/skp/images/historic.png",
+"http://dampos.github.io/images/coffee.png", 
+"http://dampos.github.io/images/restaurant.png",
+"http://dampos.github.io/images/hotel.png",
+"http://dampos.github.io/images/landscape.png",
+"http://dampos.github.io/images/shopping.png",
+"http://dampos.github.io/images/museum.png",
+"http://dampos.github.io/images/square.png",
+"http://dampos.github.io/images/hangout.png",
+"http://dampos.github.io/images/historic.png",
 ];
 
 var locations = [ 
