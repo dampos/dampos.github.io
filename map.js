@@ -194,15 +194,43 @@ var locations = [
         map.mapTypes.set(customMapTypeId, customMapType);
         map.setMapTypeId(customMapTypeId);
 
+		// Try HTML5 geolocation.
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+
+      var mypos = new google.maps.Marker({
+    position: pos,
+    map: map,
+    title: 'MyPosition!'
+  });
+
+
+      map.setCenter(pos);
+    }, function() {
+      handleLocationError(true, mypos, map.getCenter());
+    });
+  } else {
+    // Browser doesn't support Geolocation
+    handleLocationError(false, infoWindow, map.getCenter());
+  }
+
+
+		
 		
         initialize();
 		
 
-      }
+}
 
 
 
-
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+	infoWindow;
+}
 function initialize()
 {
 
