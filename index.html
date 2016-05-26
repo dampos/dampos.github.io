@@ -1,80 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-.item{
-  width:650px;
-    min-height:520px;
-    max-height: auto;
-    float: left;
-    margin: 3px;
-    padding: 3px;
-	}
-img{
-	  max-width: 100%;
-    height: auto;
-	-webkit-filter: blur(0px) brightness(1.1) contrast(1.6) grayscale(0.43) hue-rotate(16deg) invert(0.1) opacity(97%) saturate(6.4) sepia(0.7) drop-shadow(5px 5px 5px #000)
- 	
-			-webkit-transition: all 1s ease;
-			-moz-transition: all 1s ease;
-			-o-transition: all 1s ease;
-			-ms-transition: all 1s ease;
-			transition: all 1s ease;
-		}
-		.saturation {
-			filter: saturate(400%);
-			-webkit-filter: saturate(400%);
-			-moz-filter: saturate(400%);
-			-o-filter: saturate(400%);
-			-ms-filter: saturate(400%);
-		}
-		img.saturation:hover{
-			filter: saturate(100%);
-			-webkit-filter: saturate(100%);
-			-moz-filter: saturate(100%);
-			-o-filter: saturate(100%);
-			-ms-filter: saturate(100%);
-		}
-a{
-color: white;
-}
 
-</style>
 <head>
-      <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
-	  <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="main.css">
-<title>Experience Skopje</title>
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Coat_of_arms_of_Skopje.svg/122px-Coat_of_arms_of_Skopje.svg.png" type="image/png">
-  <?php 
-  $language;
-  if ($language == "en") {
-    include("headerEn.php");
-  } else {
-    include("header.php");
-  } 
-?>
 
-  <body>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome to Skopje</title>
+
    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
  
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link href="css/full-slider.css" rel="stylesheet">
 
-        <script src="javascript.js"></script>
+</head>
+
+<body>
+            </div>
+           
+        </div>
+        
+    </nav>
+
     
-  </body>
-  
- <div class='content'>
-  <h1> <a href="map.html" >EXPERIENCE SKOPJE</a></h1>
-   </div>
-    
-      
+    <header id="myCarousel" class="carousel slide">
+        
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="interval"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            
 
-<a href="http://www.accuweather.com/en/mk/skopje/227397/weather-forecast/227397" class="aw-widget-legal">
+        </ol>
 
-</a><div id="awcc1462905417935" style="width:150px" class="aw-widget-current"  data-locationkey="227397" data-unit="c" data-language="en-us" data-useip="false" data-uid="  awcc1462905417935"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
- <br>
- <p id="voved" style="width: 90%" align="center">By a momentous visit to Skopje, except the fact that you will sightsee the capital city of Republic of Macedonia, situated in the Balkans, you will be given an ideal opportunity to travel back to fifteenth century by crossing the Stone Bridge over the Vardar River which connects the Macedonia Square in the center of the city, to the Old Bazaar. It is certain to realize the value of the many defenses of Skopje, 1500 years' old Kale Fortress provided. Take the chance to enjoy the panorama view of the capital by climbing the highest point of Vodno Mountain - the Millennium Cross which symbolizes the religion of most of the citizens. Get to know more about Skopje’s appearance throughout the five centuries under the Ottoman Empire, by talking a walk along the narrow streets Old Bazaar contains. I do hope that during the exciting vacation in Skopje, you will enjoy exploring the treasures the stimulating tourist destination possesses.</p>
+       
+        <div class="carousel-inner">
+            <div class="item active">
+              
+                <div class="fill" style="background-image:url('http://static.panoramio.com/photos/large/96003834.jpg');"></div>
+                <div class="carousel-caption">
+                    <font size="10" face="cursive" color="White" position="center"><i>Welcome to Skopje</i>        </b></font>
+                   
+                    <style>
+                    .button {
+                      background-color: grey;
+                    border: none;
+                         color: white;
+                    padding: 15px 32px;
+                    text-align: right;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s; 
+                    transition-duration: 0.4s;
+                            }
+
+                    .button1 {
+                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                        }
+                        </style>
+                    <button class="button button1" onclick="location.href='/map.html';" >Go</button>
 
 
- </head>
+                </div>
+            </div>
+            <div class="item">
+                
+                <div class="fill" style="background-image:url('http://macedoniaholiday.com/wp-content/gallery/skopje/skopje_panorama_01.jpg');"></div>
+                <div class="carousel-caption">
+                    <font size="10" face="cursive" color="White"><i>Welcome to Skopje</i>               </font>
+                     <style>
+                    .button {
+                      background-color: grey;
+                    border: none;
+                         color: white;
+                    padding: 15px 32px;
+                    text-align: right;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s; 
+                    transition-duration: 0.4s;
+                            }
+
+                    .button1 {
+                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                        }
+                        </style>
+                    <button class="button button1" onclick="location.href='/map.html';" >Go</button>
+                </div>
+            </div>
+            <div class="item">
+                
+                <div class="fill" style="background-image:url('http://images.fineartamerica.com/images-medium-large-5/sunset-in-skopje-ivan-vukelic.jpg');"></div>
+                <div class="carousel-caption">
+                    <font size="10" face="cursive" color="White"><i>Welcome to Skopje</i>        </font>
+                     <style>
+                    .button {
+                      background-color: grey;
+                    border: none;
+                         color: white;
+                    padding: 15px 32px;
+                    text-align: right;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s; 
+                    transition-duration: 0.4s;
+                            }
+
+                    .button1 {
+                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                        }
+                        </style>
+                    <button class="button button1" onclick="location.href='/map.html';" >Go</button>
+                </div>
+                <div class="item">
+                
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <font size="10" face="cursive" color="White"><i>Welcome to Skopje</i>        </font>
+                     <style>
+                    .button {
+                      background-color: grey;
+                    border: none;
+                         color: white;
+                    padding: 15px 32px;
+                    text-align: right;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s; 
+                    transition-duration: 0.4s;
+                            }
+
+                    .button1 {
+                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                        }
+                        </style>
+                    <button class="button button1" onclick="location.href='/map.html';" >Go</button>
+                </div>
+                <div class="item">
+                
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <font size="10" face="cursive" color="White"><i>Welcome to Skopje</i>        </font>
+                     <style>
+                    .button {
+                      background-color: grey;
+                    border: none;
+                         color: white;
+                    padding: 15px 32px;
+                    text-align: right;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s; 
+                    transition-duration: 0.4s;
+                            }
+
+                    .button1 {
+                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                        }
+                        </style>
+                    <button class="button button1" onclick="location.href='/map.html';" >Go</button>
+                </div>
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <font size="10" face="cursive" color="White" position="center"><i>Welcome to Skopje</i>        </font>
+                     <style>
+                    .button {
+                      background-color: grey;
+                    border: none;
+                         color: white;
+                    padding: 15px 32px;
+                    text-align: right;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s; 
+                    transition-duration: 0.4s;
+                            }
+
+                    .button1 {
+                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                        }
+                        </style>
+                    <button class="button button1" onclick="location.href='/map.html';" >Go</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class=""></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class=""></span>
+        </a>
+
+    </header>
+
+   
+
+    <!-- jQuery -->
+    <!-- ZA VREMENSKI INTERVAL JAVARA-->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
 </html>
